@@ -13,11 +13,11 @@
 
     <request-character-encoding>UTF-8</request-character-encoding>
     <servlet>
-        <servlet-name>HelloWorldExample</servlet-name>
-        <servlet-class>HelloWorldExample</servlet-class>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>Login</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>HelloWorldExample</servlet-name>
-        <url-pattern>/HelloWorldExample</url-pattern>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
     </servlet-mapping>
 </web-app>
