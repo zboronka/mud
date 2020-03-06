@@ -16,6 +16,10 @@
         <servlet-name>Login</servlet-name>
         <servlet-class>Login</servlet-class>
     </servlet>
+	<servlet>
+		<servlet-name>Characters</servlet-name>
+		<servlet-class>Characters</servlet-class>
+	</servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Who</url-pattern>
@@ -23,5 +27,13 @@
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Characters</servlet-name>
+        <url-pattern>/characters</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Characters</servlet-name>
+		<url-pattern>/characters/*</url-pattern>
     </servlet-mapping>
 </web-app>
