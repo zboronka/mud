@@ -13,20 +13,16 @@
 
     <request-character-encoding>UTF-8</request-character-encoding>
     <servlet>
-        <servlet-name>Login</servlet-name>
-        <servlet-class>Login</servlet-class>
+        <servlet-name>View</servlet-name>
+        <servlet-class>View</servlet-class>
     </servlet>
 	<servlet>
 		<servlet-name>Characters</servlet-name>
 		<servlet-class>Characters</servlet-class>
 	</servlet>
     <servlet-mapping>
-        <servlet-name>Login</servlet-name>
-        <url-pattern>/Who</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Login</servlet-name>
-        <url-pattern>/Login</url-pattern>
+        <servlet-name>View</servlet-name>
+        <url-pattern>/view</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Characters</servlet-name>
