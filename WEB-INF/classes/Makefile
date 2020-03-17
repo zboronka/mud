@@ -1,5 +1,11 @@
-TOMCAT=../../../apache-tomcat-9.0.30/lib
-CP=-cp .:$(TOMCAT)/servlet-api.jar:$(TOMCAT)/jackson-core.jar:$(TOMCAT)/jackson-databind.jar
+TOMCAT=../../../tomcat/lib
+SERVLET=$(TOMCAT)/servlet-api.jar
+JACKSONC=$(TOMCAT)/jackson-core.jar
+JACKSOND=$(TOMCAT)/jackson-databind.jar
+MYSQL=$(TOMCAT)/mysql-connector-java.jar
+CP=-cp .:$(SERVLET):$(JACKSONC):$(JACKSOND):$(TOMCAT)
 SRC:=$(wildcard *.java)
-all:
-	javac $(CP) $(SRC)
+CLASS=$(SRC:%.java=%.class)
+%.class: %.java
+	javac $(CP) $^ 
+all: $(CLASS)
